@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 07.08.2026 21:12:40
+// Create Date: 08.08.2026 21:40:42
 // Design Name: 
-// Module Name: SR_latch_tb
+// Module Name: mux_2_1
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,41 +20,36 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module SR_latch_tb();
-wire Q, Qbar;
-reg s, r;
-SR_latch dut(s,r,Q,Qbar);
-initial begin
-$monitor($time, " s = %b, r = %b, Q = %b, Qbar = %b",s, r, Q, Qbar);
- s = 0; r = 0;
-#5 s =0; r = 1;
-#5 s = 0; r = 0;
-#5 s =1; r = 0;
-#5 s =0; r = 0;
-#5 s =1; r = 1;
-#40 $finish;
-end
+// Design a 2 to 1 multiplexer using bufif0 and bufif1 qith the given delay specification
+// for gates b1 and b2
+
+//                Min     Type    Max
+//    Rise        1       2       3
+//    Fall        3       4       5  
+//    turnoff     5       6       7
+
+// Apply stimulus and tet the output values
+
+
+module mux_2_1(in0, in1, s, out);
+input in0, in1, s;
+output out;
+bufif1 #(1:2:3, 3:4:5, 5:6:7) b2(out, in1, s);
+bufif0 #(1:2:3, 3:4:5, 5:6:7) b1(out, in0, s);
+
 endmodule
 
 
-// Simulation output
-//run 1000ns
-//Time =                    0 ns, s = 0, in0 = 0, in1 = 0, out = x
-//Time =                    6 ns, s = 0, in0 = 0, in1 = 0, out = 0
-//Time =                   20 ns, s = 0, in0 = 0, in1 = 1, out = 0
-//Time =                   40 ns, s = 0, in0 = 1, in1 = 0, out = 0
-//Time =                   42 ns, s = 0, in0 = 1, in1 = 0, out = 1
-//Time =                   60 ns, s = 0, in0 = 1, in1 = 1, out = 1
-//Time =                   80 ns, s = 1, in0 = 0, in1 = 0, out = 1
-//Time =                   84 ns, s = 1, in0 = 0, in1 = 0, out = x
-//Time =                   86 ns, s = 1, in0 = 0, in1 = 0, out = 0
-//Time =                  100 ns, s = 1, in0 = 0, in1 = 1, out = 0
-//Time =                  102 ns, s = 1, in0 = 0, in1 = 1, out = 1
-//Time =                  120 ns, s = 1, in0 = 1, in1 = 0, out = 1
-//Time =                  124 ns, s = 1, in0 = 1, in1 = 0, out = 0
-//Time =                  140 ns, s = 1, in0 = 1, in1 = 1, out = 0
-//Time =                  142 ns, s = 1, in0 = 1, in1 = 1, out = 1
-//$finish called at time : 160 ns 
 
+// We get Z at s = 0, in0 = 1, in1 = 0 in the starting because turnoff delay (Typ = 6ns) takes longer than rise delay (Typ = 2ns) or fall delay (Typ = 4ns)
 
+// We get X as changes from s = 1, in0 = 0, in1 a the value conflicts 
+// when s toggles from 0 to 1 your are telling bufif0 to turn OFF and bufif1 to turn ON at the same time
+// bufif1 (b2) switches ON after its Rise/ Fall propagation delay (4ns)
+// bufif0 (b1) takes it turnoff delay (6ns) to completely go into high impedance (Z)
 
+// When s = 1, in0 = 1, in1 = 0 
+// Low impedance indicates that the wire ha strong, active driver attached to it, as opposedto a floating wore.
+// when s = 1, gate b2 is firmly enabled, directly connection the in1 value to the output
+// Because a tri-state gate iss actively driving a valid logic state, the output pin transitions out of its
+// high impedance state adn into a ;ow impedance dtiven state. The line is no longer floating.
