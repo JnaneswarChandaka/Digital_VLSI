@@ -1,16 +1,22 @@
 Time resolution is 1 ps
 Time =                    0, S = 1001, A = 0100, B = 0001, F = 0000 
-The default value is 0000
+The value of A & B is 0000
 Time =                   10, S = 1101, A = 0011, B = 1101, F = 0000 
+The default value is 0000
 Time =                   20, S = 0001, A = 0101, B = 0010, F = 0110 
-The default value is 0000
+The value of  A + 1 is 0110
 Time =                   30, S = 1101, A = 1101, B = 0110, F = 0000 
-Time =                   40, S = 1001, A = 1101, B = 1100, F = 1100 
-Time =                   50, S = 1010, A = 0110, B = 0101, F = 1001 
-Time =                   60, S = 0010, A = 0101, B = 0111, F = 1100 
 The default value is 0000
+Time =                   40, S = 1001, A = 1101, B = 1100, F = 1100 
+The value of A & B is 1100
+Time =                   50, S = 1010, A = 0110, B = 0101, F = 1001 
+The value of ~ A is 1001
+Time =                   60, S = 0010, A = 0101, B = 0111, F = 1100 
+The value of  A + B is 1100
 Time =                   70, S = 1110, A = 1111, B = 0010, F = 0000 
 The default value is 0000
 Time =                   80, S = 1100, A = 1000, B = 0101, F = 0000 
+The default value is 0000
 Time =                   90, S = 0101, A = 1101, B = 1101, F = 0000 
-$finish called at time : 120 ns 
+The value of A - B is 0000
+$finish called at time : 120 ns
