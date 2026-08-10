@@ -26,19 +26,52 @@ input [3:0] S;
 output reg [3:0] F;
 always@(*) begin
 case(S)
-4'b0000:   F = A;
-4'b0001:   F = A + 1;
-4'b0010:   F = A + B;
-4'b0011:   F = A + B + 1;
-4'b0100:   F = A - B - 1;
-4'b0101:   F = A - B;
-4'b0110:   F = A - 1;
-4'b0111:   F = A | B;
-4'b1000:   F = A ^ B;
-4'b1001:   F = A & B;
-4'b1010:   F = ~A;
+4'b0000:  begin
+ F = A;
+ $strobe("The value of  A is %b", F);
+ end
+4'b0001:  begin 
+F = A + 1; 
+$strobe("The value of  A + 1 is %b", F);
+end
+4'b0010: begin
+   F = A + B;
+   $strobe("The value of  A + B is %b", F);
+   end
+4'b0011: begin
+   F = A + B + 1;
+$strobe("The value of  A + B + 1 is %b", F);
+end
+4'b0100:  begin
+F = A - B - 1;
+$strobe("The value of  A - B - 1 is %b", F);
+end
+4'b0101: begin
+  F = A - B;
+$strobe("The value of A - B is %b", F);
+end
+4'b0110: begin
+  F = A - 1;
+$strobe("The value of A - 1 is %b", F);
+end
+4'b0111: begin
+  F = A | B;
+$strobe("The value of A | B is %b", F);
+end
+4'b1000: begin 
+ F = A ^ B;
+$strobe("The value of A ^ B is %b", F);
+end
+4'b1001: begin
+  F = A & B;
+$strobe("The value of A & B is %b", F);
+end
+4'b1010: begin
+  F = ~A;
+$strobe("The value of ~ A is %b", F);
+end
 default: begin F= 4'b0000;
-$display("The default value is %b", 4'b0000);
+$strobe("The default value is %b", 4'b0000);
 end
 endcase
 end
