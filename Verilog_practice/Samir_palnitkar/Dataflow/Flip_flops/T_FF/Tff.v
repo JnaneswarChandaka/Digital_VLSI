@@ -24,6 +24,7 @@ module D_flipflop(clk, T, Q, Qbar);
 input clk, T;
 output reg Q;
 output Qbar;
+initial Q = 1'b0;
 always@(posedge clk) begin
 Q <= ~T;
 end 
