@@ -1,0 +1,16 @@
+Time resolution is 1 ps
+Time =                    0, clk = 0, S = x, R = x, Q = x, Qbar = x
+Time =                   10, clk = 1, S = x, R = x, Q = 0, Qbar = 1
+Time =                   20, clk = 0, S = 0, R = 0, Q = 0, Qbar = 1
+Time =                   30, clk = 1, S = 0, R = 0, Q = 0, Qbar = 1
+Time =                   40, clk = 0, S = 0, R = 1, Q = 0, Qbar = 1
+Time =                   50, clk = 1, S = 0, R = 1, Q = 0, Qbar = 1
+Time =                   60, clk = 0, S = 1, R = 0, Q = 0, Qbar = 1
+Time =                   70, clk = 1, S = 1, R = 0, Q = 1, Qbar = 0
+Time =                   80, clk = 0, S = 1, R = 1, Q = 1, Qbar = 0
+Time =                   90, clk = 1, S = 1, R = 1, Q = x, Qbar = x
+Time =                  100, clk = 0, S = 0, R = 0, Q = x, Qbar = x
+Time =                  110, clk = 1, S = 0, R = 0, Q = x, Qbar = x
+Time =                  120, clk = 0, S = 1, R = 0, Q = x, Qbar = x
+Time =                  130, clk = 1, S = 1, R = 0, Q = 1, Qbar = 0
+$finish called at time : 140 ns
