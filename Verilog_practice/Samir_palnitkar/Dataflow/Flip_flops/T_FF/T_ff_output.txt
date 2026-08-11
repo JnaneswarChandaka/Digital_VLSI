@@ -1,0 +1,28 @@
+Time resolution is 1 ps
+Time =                    0, clk = 0, T = 0, Q = 0, Qbar = 1
+Time =                   10, clk = 1, T = 0, Q = 1, Qbar = 0
+Time =                   20, clk = 0, T = 0, Q = 1, Qbar = 0
+Time =                   30, clk = 1, T = 0, Q = 1, Qbar = 0
+Time =                   40, clk = 0, T = 1, Q = 1, Qbar = 0
+Time =                   50, clk = 1, T = 1, Q = 0, Qbar = 1
+Time =                   60, clk = 0, T = 0, Q = 0, Qbar = 1
+Time =                   70, clk = 1, T = 0, Q = 1, Qbar = 0
+Time =                   80, clk = 0, T = 1, Q = 1, Qbar = 0
+Time =                   90, clk = 1, T = 1, Q = 0, Qbar = 1
+Time =                  100, clk = 0, T = 0, Q = 0, Qbar = 1
+Time =                  110, clk = 1, T = 0, Q = 1, Qbar = 0
+Time =                  120, clk = 0, T = 1, Q = 1, Qbar = 0
+Time =                  130, clk = 1, T = 1, Q = 0, Qbar = 1
+Time =                  140, clk = 0, T = 1, Q = 0, Qbar = 1
+Time =                  150, clk = 1, T = 1, Q = 0, Qbar = 1
+Time =                  160, clk = 0, T = 0, Q = 0, Qbar = 1
+Time =                  170, clk = 1, T = 0, Q = 1, Qbar = 0
+Time =                  180, clk = 0, T = 0, Q = 1, Qbar = 0
+Time =                  190, clk = 1, T = 0, Q = 1, Qbar = 0
+Time =                  200, clk = 0, T = 1, Q = 1, Qbar = 0
+Time =                  210, clk = 1, T = 1, Q = 0, Qbar = 1
+Time =                  220, clk = 0, T = 1, Q = 0, Qbar = 1
+Time =                  230, clk = 1, T = 1, Q = 0, Qbar = 1
+Time =                  240, clk = 0, T = 1, Q = 0, Qbar = 1
+Time =                  250, clk = 1, T = 1, Q = 0, Qbar = 1
+$finish called at time : 260 ns
