@@ -1,0 +1,20 @@
+run 1000ns
+Time =                    0, clk = 0, J = x, K = x, Q = x, Qbar = x
+Time =                   10, clk = 1, J = x, K = x, Q = 0, Qbar = 1
+Time =                   20, clk = 0, J = 0, K = 0, Q = 0, Qbar = 1
+Time =                   30, clk = 1, J = 0, K = 0, Q = 0, Qbar = 1
+Time =                   40, clk = 0, J = 0, K = 1, Q = 0, Qbar = 1
+Time =                   50, clk = 1, J = 0, K = 1, Q = 0, Qbar = 1
+Time =                   60, clk = 0, J = 1, K = 0, Q = 0, Qbar = 1
+Time =                   70, clk = 1, J = 1, K = 0, Q = 1, Qbar = 0
+Time =                   80, clk = 0, J = 1, K = 1, Q = 1, Qbar = 0
+Time =                   90, clk = 1, J = 1, K = 1, Q = 0, Qbar = 1
+Time =                  100, clk = 0, J = 0, K = 0, Q = 0, Qbar = 1
+Time =                  110, clk = 1, J = 0, K = 0, Q = 0, Qbar = 1
+Time =                  120, clk = 0, J = 0, K = 1, Q = 0, Qbar = 1
+Time =                  130, clk = 1, J = 0, K = 1, Q = 0, Qbar = 1
+Time =                  140, clk = 0, J = 1, K = 1, Q = 0, Qbar = 1
+Time =                  150, clk = 1, J = 1, K = 1, Q = 1, Qbar = 0
+Time =                  160, clk = 0, J = 1, K = 0, Q = 1, Qbar = 0
+Time =                  170, clk = 1, J = 1, K = 0, Q = 1, Qbar = 0
+$finish called at time : 180 ns
