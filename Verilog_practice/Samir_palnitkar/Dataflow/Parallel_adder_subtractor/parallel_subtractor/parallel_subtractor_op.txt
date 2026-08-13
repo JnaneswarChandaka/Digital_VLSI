@@ -1,0 +1,8 @@
+run 1000ns
+A = 0000, B = 0000, bin = 0, diff = 1111, bout = 0000
+A = 0101, B = 0100, bin = 0, diff = 0000, bout = 1111
+A = 0110, B = 0101, bin = 1, diff = 0001, bout = 1110
+A = 0100, B = 1000, bin = 0, diff = 1011, bout = 0100
+A = 1100, B = 1010, bin = 1, diff = 0010, bout = 1101
+A = 0110, B = 1100, bin = 0, diff = 1001, bout = 0110
+$finish called at time : 80 ns 
