@@ -1,0 +1,27 @@
+// parallel adder and subtractor using 4 full adders
+
+module parallel_add_sub_tb();
+reg [3:0] a, b;
+reg cin, mode;
+wire [3:0] sum,cout;
+
+parallel_add_subtract dut3(.a(a), .b(b), .cin(cin),.mode(mode), .sum(sum), .cout(cout));
+initial begin
+$monitor("a = %b, b = %b, cin = %b, sum = %b, cout = %b", a, b, cin, sum, cout);
+a = 4'b0000; b = 4'b0000; cin = 1'b0;
+#10 a = 4'b0000; b = 4'b0000; cin = 1'b0; mode = 1'b0;
+#10 a = 4'b0010; b = 4'b0100; cin = 1'b0; mode = 1'b0;
+#10 a = 4'b1110; b = 4'b0110; cin = 1'b0; mode = 1'b0;
+#10 a = 4'b0010; b = 4'b1000; cin = 1'b0; mode = 1'b0;
+#10 a = 4'b0000; b = 4'b0000; cin = 1'b0; mode = 1'b0;
+#10 a = 4'b0000; b = 4'b0000; cin = 1'b0; mode = 1'b0;
+#10 a = 4'b0100; b = 4'b0110; cin = 1'b1; mode = 1'b1;
+#10 a = 4'b1100; b = 4'b1010; cin = 1'b1; mode = 1'b1;
+#10 a = 4'b0110; b = 4'b1100; cin = 1'b0; mode = 1'b0;
+#10 a = 4'b1010; b = 4'b1100; cin = 1'b0; mode = 1'b0;
+#10 a = 4'b1010; b = 4'b1000; cin = 1'b1; mode = 1'b1;
+#10 a = 4'b0011; b = 4'b1100; cin = 1'b0; mode = 1'b0;
+#20 $finish;
+
+end
+endmodule
