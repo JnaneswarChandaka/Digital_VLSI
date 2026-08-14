@@ -1,0 +1,16 @@
+// BCD_adder simulation output
+
+ run 1000ns
+A = 0000, B = 0000, cin = 0, Sum = 0000, cout = 0,
+A = 0010, B = 0110, cin = 0, Sum = 1000, cout = 0,
+A = 0110, B = 1110, cin = 0, Sum = 1010, cout = 1,
+A = 1010, B = 0110, cin = 0, Sum = 0110, cout = 1,
+A = 0011, B = 0010, cin = 1, Sum = 0110, cout = 0,
+A = 0110, B = 0110, cin = 1, Sum = 0011, cout = 1,
+A = 1010, B = 0011, cin = 0, Sum = 0011, cout = 1,
+A = 0110, B = 0110, cin = 1, Sum = 0011, cout = 1,
+A = 0010, B = 0110, cin = 0, Sum = 1000, cout = 0,
+A = 0010, B = 1010, cin = 1, Sum = 0011, cout = 1,
+A = 0111, B = 0001, cin = 1, Sum = 1001, cout = 0,
+A = 1010, B = 0110, cin = 0, Sum = 0110, cout = 1,
+$finish called at time : 130 ns
