@@ -1,0 +1,10 @@
+run 1000ns
+en      a   out
+0     1000   zz
+0     0100   zz
+0     0010   zz
+1     1000   00
+1     0100   01
+1     0010   10
+1     0001   11
+$finish called at time : 80 ns
