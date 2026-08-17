@@ -1,0 +1,6 @@
+ run 1000ns
+a = 0, b = 0,   dif = 0, bout = 0
+a = 0, b = 1,   dif = 1, bout = 1
+a = 1, b = 0,   dif = 1, bout = 0
+a = 1, b = 1,   dif = 0, bout = 0
+$finish called at time : 50 ns
