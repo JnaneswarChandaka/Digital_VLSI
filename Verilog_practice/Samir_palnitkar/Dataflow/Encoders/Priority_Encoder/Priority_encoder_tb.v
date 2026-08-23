@@ -5,8 +5,8 @@ reg [7:0]D;
 wire A,B,C;
 priority_encoder dut(D, A,B,C);
 initial begin
-$display("D         A   B   C");
-$monitor("%d        %d  %d   %d",D,A,B,C);
+    $display("      D          A   B  C");
+    $monitor("%b        %b  %b  %b",D,A,B,C);
 //    D = 8'b10000000;
 //#10 D = 8'bx1000000;
 //#10 D = 8'bxx100000;
