@@ -1,0 +1,11 @@
+run 1000ns
+ A  B  C      X
+ 0  0  0      0
+ 0  0  1      1
+ 0  1  0      1
+ 0  1  1      0
+ 1  0  0      1
+ 1  0  1      0
+ 1  1  0      0
+ 1  1  1      1
+$finish called at time : 80 ns
