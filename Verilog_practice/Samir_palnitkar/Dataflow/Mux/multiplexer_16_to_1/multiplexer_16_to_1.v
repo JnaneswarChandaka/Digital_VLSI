@@ -1,29 +1,27 @@
 
-
-// 4:1 mux module
-module mux_4_to_1(s, a,b,c,d, y);
-input [1:0]s;
-input a,b,c,d;
-output reg y;
+module mux_16_to_1(S, I, Y);
+input [3:0] S;
+input [15:0] I;
+output reg Y;
 always@(*) begin
-case(s)
-2'b00: y = a;
-2'b01: y = b;
-2'b10: y = c;
-2'b11: y = d;
-default: y = 2'b00;
+case(S)
+4'b0000: Y =  I[0];
+4'b0001: Y =  I[1];
+4'b0010: Y =  I[2];
+4'b0011: Y =  I[3];
+4'b0100: Y =  I[4];
+4'b0101: Y =  I[5];
+4'b0110: Y =  I[6];
+4'b0111: Y =  I[7];
+4'b1000: Y =  I[8];
+4'b1001: Y =  I[9];
+4'b1010: Y = I[10];
+4'b1011: Y = I[11];
+4'b1100: Y = I[12];
+4'b1101: Y = I[13];
+4'b1110: Y = I[14];
+4'b1111: Y = I[15];
+default: Y = 1'b0;
 endcase
 end
-endmodule
-
-
-// multi level mux function
-
-module two_level_mux_function(A,B,C, X);
-input A,B,C;
-//input [7:0]I;
-output X;
-wire Y;
-mux_4_to_1 m1({A,B},0, 1, 1, 0, Y);
-mux_4_to_1 m2({Y,C},0, 1, 1, 0, X);
 endmodule
