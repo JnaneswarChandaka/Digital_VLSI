@@ -13,5 +13,5 @@ Using truth table the circuit diagram can be given as
 
 
 Circuit Diagram of 2x1 Mux
-<img width="1042" height="745" alt="2-1-Multiplexer-(2)" src="https://github.com/user-attachments/assets/5da701dd-4e4f-46a7-af9c-f7847b9188de" />
+<img width="844" height="400" alt="Circuit-diagram-(1)" src="https://github.com/user-attachments/assets/9211f07b-d7a9-47cd-b025-736b5a5321af" />
 
