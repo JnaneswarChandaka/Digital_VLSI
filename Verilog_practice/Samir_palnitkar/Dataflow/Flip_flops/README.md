@@ -13,8 +13,11 @@ Types of Flip-Flops
 Given Below are the Types of Flip-Flop
 
 -> SR Flip Flop
+
 -> JK Flip Flop
+
 -> D Flip Flop
+
 -> T Flip Flop
 
 
