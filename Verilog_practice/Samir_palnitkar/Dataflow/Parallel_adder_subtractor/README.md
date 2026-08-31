@@ -1,3 +1,5 @@
+# PARALLEL ADDERS AND SUBTRACTORS
+
 A digital circuit that adds two binary numbers of any bit length in parallel form and produces the sum of those number in parallel form is called a parallel adder.
 
 A parallel adder basically consists of full adders in a chain form as shown in Figure 1. Here, the output bit of each full adder is connected to the input carry terminal of the next full adder circuit in the chain.
