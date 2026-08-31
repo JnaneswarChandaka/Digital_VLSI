@@ -9,7 +9,8 @@
 -> From the truth table, the logic expressions for outputs can be written as follows:
 
 
-<img width="484" height="621" alt="xSDWQHi" src="https://github.com/user-attachments/assets/014d4e85-7058-45ea-9dee-7c0b3266de8a" />
+<img width="420" height="130" alt="yVeSIMV" src="https://github.com/user-attachments/assets/1bad97a8-eca1-47a6-bd53-f90f36bf4aa1" />
+
 
 -> Using the above expressions, the circuit of a 3 to 8 decoder can be implemented using three NOT gates and eight 3-input AND gates as shown in figure (1).
 
@@ -21,4 +22,5 @@
 
 -> This is also called a 1 of 8 decoder since only one of eight output lines is HIGH for a particular input combination.
 
-<img width="420" height="130" alt="yVeSIMV" src="https://github.com/user-attachments/assets/1bad97a8-eca1-47a6-bd53-f90f36bf4aa1" />
+
+<img width="484" height="621" alt="xSDWQHi" src="https://github.com/user-attachments/assets/014d4e85-7058-45ea-9dee-7c0b3266de8a" />
