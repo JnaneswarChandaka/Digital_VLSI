@@ -1,4 +1,4 @@
-PRIORITY ENCODER
+# PRIORITY ENCODER
 
 The Priority Encoder is a combinational logic circuit that produces an equivalent binary code at its output pins, unique to each combination state of its inputs. As discussed in previous articles, an encoder produces a unique binary code that is related to a specific input combination, and the inputs handled by an encoder are given by 2n. The binary code then can be processed through a Decoder to obtain the original input combination. The Priority Encoder works in a similar way and produces a binary code but with the highest priority.
 
