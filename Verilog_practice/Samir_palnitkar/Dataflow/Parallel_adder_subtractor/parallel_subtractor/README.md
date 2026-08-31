@@ -1,3 +1,5 @@
+# PARALLEL SUBTRACTOR
+
 A digital arithmetic circuit which is used to find the arithmetic difference of two binary numbers in parallel form is called a parallel subtractor.
 
 We can implement a parallel subtractor in several ways such as combining half subtractors and full subtractors, all full subtractors, all full adders, etc. 
