@@ -1,3 +1,5 @@
+# CODE CONVERTERS
+
 A code converter is a digital electronic circuit that is used to convert a digital code from one form to another. A digital code is nothing but a piece of data or information represented in binary format, i.e., in the form of strings of 0s and 1s.
 Code converters are essential components in various digital systems that use different encoding schemes. They help to make two different digital systems compatible with each other.
 
