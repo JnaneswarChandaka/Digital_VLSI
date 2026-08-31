@@ -1,3 +1,5 @@
+# DECODERS: 
+
 A decoder is a digital logic circuit that converts n input lines into up to 2^{n} unique output lines. For every input combination, only one output channel becomes active while all other outputs remain inactive.
 Common Types:
 2-to-4 Line Decoder: Uses 2 inputs to drive 4 outputs (2²).
