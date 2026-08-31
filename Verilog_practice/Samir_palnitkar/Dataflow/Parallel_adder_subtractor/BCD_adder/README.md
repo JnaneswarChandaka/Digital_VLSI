@@ -1,3 +1,5 @@
+# BCD ADDER:
+
 BCD adder refers to a 4-bit binary adder that can add two 4-bit words of BCD format. The output of the addition is a BCD-format 4-bit output word, which defines the decimal sum of the addend and augend and a carry that is created in case this sum exceeds a decimal value of 9. Therefore, BCD adders can implement decimal addition.
 
 
