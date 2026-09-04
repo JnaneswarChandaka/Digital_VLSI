@@ -1,0 +1,9 @@
+Time resolution is 1 ps
+A   S[1]  S[0]     y0  y1  y2  y3
+0    0     0        0   0   0   0 
+0    1     1        0   0   0   0 
+1    0     0        1   0   0   0 
+1    0     0        0   1   0   0 
+1    1     1        0   0   1   0 
+1    1     1        0   0   0   1 
+$finish called at time : 80 ns 
