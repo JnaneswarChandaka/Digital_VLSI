@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+A    s    y0  y1
+0   0     0   0
+1   0     1   0
+0   1     0   0
+1   1     0   1
+$finish called at time : 40 ns
