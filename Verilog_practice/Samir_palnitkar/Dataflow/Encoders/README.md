@@ -1,4 +1,6 @@
-# Encoders: 
+# Encoders 
+
+---
 
 An encoder is a digital combinational circuit that converts a human friendly information into a coded format for processing using machines. In simple words, an encoder converts a piece of information normal form to coded form. This process is called encoding.
 
