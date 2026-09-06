@@ -17,3 +17,4 @@ Some of the commonly used types of encoders in digital electronics −
 1. 4 to 2 Encoder
 2.  8 to 3 Encoder (Octal Encoder)
 3. decimal to BCD Encoder
+4. Priority Encoder
