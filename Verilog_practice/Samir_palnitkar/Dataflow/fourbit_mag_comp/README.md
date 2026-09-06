@@ -1,3 +1,7 @@
+**Magnitude comparator**
+---
+
+
 A 4-bit magnitude comparator is a digital logic circuit that compares two 4-bit binary numbers to determine which one is larger, smaller, or if they are equal
 
 
