@@ -1,3 +1,6 @@
+**Demultiplexer**
+
+---
 
 A demultiplexer (or DEMUX) is a digital circuit that takes a single input signal and routes it to one of many separate output lines.
 
